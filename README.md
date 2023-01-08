@@ -16,15 +16,15 @@ The plots are present in the `plots` folder for timestamps:
 [100, 200, 500, 1000, 1500, 5000, 8000, 9000, 9500]
 
 ![Graph at timestamp 0](plots/image0.png)
-![Graph at timestamp 100](plots/image100.png)
-![Graph at timestamp 200](plots/image200.png)
-![Graph at timestamp 500](plots/image500.png)
-![Graph at timestamp 1000](plots/image1000.png)
-![Graph at timestamp 1500](plots/image1500.png)
-![Graph at timestamp 5000](plots/image5000.png)
-![Graph at timestamp 8000](plots/image8000.png)
-![Graph at timestamp 9000](plots/image9000.png)
-![Graph at timestamp 9500](plots/image9500.png)
+![Graph at timestamp 100](plots/image1.png)
+![Graph at timestamp 200](plots/image2.png)
+![Graph at timestamp 500](plots/image3.png)
+![Graph at timestamp 1000](plots/image4.png)
+![Graph at timestamp 1500](plots/image5.png)
+![Graph at timestamp 5000](plots/image6.png)
+![Graph at timestamp 8000](plots/image7.png)
+![Graph at timestamp 9000](plots/image8.png)
+![Graph at timestamp 9500](plots/image9.png)
 
 A gif is present as output.gif file created using the above mentioned plots.
 ![Output Animation](output.gif)
