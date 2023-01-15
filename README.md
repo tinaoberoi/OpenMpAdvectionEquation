@@ -72,6 +72,7 @@ For schedule = guided, N = 200, algo = second_order
 For schedule = static, N = 200, algo = lax
 ![Graph at od weak scaling](./milestone2/images/200N_lax_static.png)
 
+
 For schedule = static, N = 200, algo = second_order
 ![Graph at od weak scaling](./milestone2/images/200N_second_order_static.png)
 
@@ -80,6 +81,18 @@ For schedule = static, N = 200, algo = first_order
 
 
 - A plot of a weak scaling analysis using the following parameters:
+
+Since the server was very slow and ureliable I have generated the weak scales for the following:
+
+N        gridpoints      n
+
+200       40000          1
+283       80000          2
+400       160000         4
+565       320000         8
+800       640000         16
+1131      1280000.       32
+1600      2560000        64
 ![Graph at od weak scaling](./milestone2/images/weak_scale.png)
 
 
