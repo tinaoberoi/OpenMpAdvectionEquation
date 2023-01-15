@@ -1,0 +1,11 @@
+N : 800
+NT : 400
+L : 1.000000
+T : 1000.000000
+u : 0.0000005000
+v : 0.0000002850
+Algorithm : second_order
+Number of threads for outer loops: 16
+Time taken for computing guassian for algo {second_order} : 0.010243 
+Executing Second Order Method.
+Time Taken: 8.977386 

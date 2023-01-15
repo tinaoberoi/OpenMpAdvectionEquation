@@ -1,0 +1,12 @@
+N : 3200
+NT : 400
+L : 1.000000
+T : 1000.000000
+u : 0.0000005000
+v : 0.0000002850
+Algorithm : first_order
+Number of threads for outer loops: 16
+Time taken for computing guassian for algo {first_order} : 0.030986 
+Printing to : first_order/guassian.txt
+Executing First Order Method.
+Time Taken: 6.640761 
