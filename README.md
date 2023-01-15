@@ -35,6 +35,10 @@ A gif is present as output.gif file created using the above mentioned plots.
 ## Milestone 2
 
 - Details of your processor and compiler choice for any data
+Used the linux server
+
+CPU(s): 16
+Threads per core: 2
 
 - A demonstration that you get the same answer with the parallel and serial versions. Is bitwise
 reproducibility expected?
@@ -87,12 +91,19 @@ Since the server was very slow and ureliable I have generated the weak scales fo
 N        gridpoints      n
 
 200       40000          1
+
 283       80000          2
+
 400       160000         4
+
 565       320000         8
+
 800       640000         16
+
 1131      1280000.       32
+
 1600      2560000        64
+
 ![Graph at od weak scaling](./milestone2/images/weak_scale.png)
 
 
