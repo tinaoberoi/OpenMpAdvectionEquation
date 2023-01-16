@@ -34,10 +34,15 @@ A gif is present as output.gif file created using the above mentioned plots.
 
 ## Milestone 2
 
+The params are as follows:
+
+N NT L T u v algorithm(lax/first_order/second_order) num_threads
+
 To run serial code :
 
 `
 make MyAdvectionSerial
+
 ./my_advection_program_serial 1131 400 1.0 1.0e3 5.0e-7 2.85e-7 lax 8
 `
 
@@ -45,11 +50,9 @@ To run parallel code:
 
 `
 make MyAdvection
+
 ./my_advection_program_parallel 10000 20000 1.0 1.0e6 5.0e-7 2.85e-7 first_order 8
 `
-The params are as follows:
-
-N NT L T u v algorithm(lax/first_order/second_order) num_threads
 
 - Details of your processor and compiler choice for any data
 Used the linux server
