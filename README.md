@@ -88,7 +88,7 @@ grid rate = 3,527,336,860.670194 cells update per sec.<br />
 For schedule = guided, N = 3200, algo = first_order
 ![Graph at od weak scaling](./milestone2/images/3200N_first_order_guided.png)
 
-For schedule = lax, N = 3200, algo = lax
+For schedule = guided, N = 3200, algo = lax
 ![Graph at od weak scaling](./milestone2/images/3200N_lax_guided.png)
 
 For schedule = guided, N = 3200, algo = second_order
