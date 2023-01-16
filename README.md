@@ -85,9 +85,29 @@ grid rate = 3,527,336,860.670194 cells update per sec.<br />
 ∗ u = 5.0e-7
 ∗ v = 2.85e-7
 
+For schedule = guided, N = 200, algo = first_order
+![Graph at od weak scaling](./milestone2/images/3200N_first_order_guided.png)
+
+For schedule = lax, N = 200, algo = lax
+![Graph at od weak scaling](./milestone2/images/3200N_lax_guided.png)
+
+For schedule = guided, N = 200, algo = second_order
+![Graph at od weak scaling](./milestone2/images/3200N_second_order_guided.png)
+
+For schedule = static, N = 200, algo = lax
+![Graph at od weak scaling](./milestone2/images/3200N_lax_static.png)
+
+
+For schedule = static, N = 200, algo = second_order
+![Graph at od weak scaling](./milestone2/images/3200N_second_order_static.png)
+
+For schedule = static, N = 200, algo = first_order
+![Graph at od weak scaling](./milestone2/images/3200N_first_order_static.png)
+
+
 - A plot of a second strong scaling study, using the same parameters as above but with N=200
 For schedule = guided, N = 200, algo = first_order
-![Graph at od weak scaling](./milestone2/images/200N_first_order_guided.png)
+![Graph at od weak scaling](./milestone2/images/3200N_first_order_guided.png)
 
 For schedule = lax, N = 200, algo = lax
 ![Graph at od weak scaling](./milestone2/images/200N_lax_guided.png)
