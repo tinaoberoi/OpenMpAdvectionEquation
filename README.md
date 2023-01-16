@@ -51,15 +51,19 @@ To run parallel code:
 `./my_advection_program_parallel 10000 20000 1.0 1.0e6 5.0e-7 2.85e-7 first_order 8`
 
 - Details of your processor and compiler choice for any data
-Used the linux server
 
-CPU(s): 16
+Used the linux server <br />
+
+CPU(s): 16 <br />
 Threads per core: 2 <br />
+complier used : gcc <br />
 
-A demonstration that you get the same answer with the parallel and serial versions. Is bitwise
+- A demonstration that you get the same answer with the parallel and serial versions. Is bitwise
 reproducibility expected?<br />
 
-Your (best) grind rate (timesteps/s) using the parameters from Milestone 1 but on a problem with
+The output of both parallel and serial matches, output present in `milestone2/parallel_metric` and `milestone2/serial_metric`
+for all three algos `lax, first_order, second_order`.
+- Your (best) grind rate (timesteps/s) using the parameters from Milestone 1 but on a problem with
 N=10,000. This will be the standard value that we compare with each other in class.<br />
 
 The best performance was observed at <br />
