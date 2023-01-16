@@ -120,7 +120,7 @@ void populate_guassian(double **C_n1, double L, double dt, double dx, double u, 
     FILE *fptr;
     char* guassian_file = (char*)malloc(1 + strlen(algo) + strlen("_guassian.txt"));
     strcpy(guassian_file, algo);
-    strcat(guassian_file, "/guassian.txt");
+    strcat(guassian_file, "/serial_guassian.txt");
     printf("Printing to : %s\n", guassian_file);
     write_to_file(fptr, C_n1, guassian_file, N);
     #endif
@@ -158,14 +158,14 @@ void lax_method(double **C_n1, double **C_n2, double dt, double dx, double u, do
 
         #ifdef isParallel
         FILE *fptr;
-        if (n == 1000)
+        if (n == 400)
         {
             char str_n[20];
             snprintf(str_n, sizeof(str_n), "%d", n);
             char* filename = (char*)malloc(1 + strlen("/lax/") + strlen(str_n) + strlen(".txt"));
             strcpy(filename, "lax/");
             strcat(filename, str_n);
-            strcat(filename, ".txt");
+            strcat(filename, "_serial.txt");
             printf("Printing to : %s\n", filename);
             write_to_file(fptr, C_n1, filename, N);
         }
@@ -228,14 +228,14 @@ void first_order_upwind(double **C_n1, double **C_n2, double dt, double dx, doub
 
         #ifdef isParallel
         FILE *fptr;
-        if (n == 1000)
+        if (n == 400)
         {
             char str_n[20];
             snprintf(str_n, sizeof(str_n), "%d", n);
             char* filename = (char*)malloc(1 + strlen("/first_order/") + strlen(str_n) + strlen(".txt"));
             strcpy(filename, "first_order/");
             strcat(filename, str_n);
-            strcat(filename, ".txt");
+            strcat(filename, "_serial.txt");
             printf("Printing to : %s\n", filename);
             write_to_file(fptr, C_n1, filename, N);
         }
@@ -298,14 +298,14 @@ void second_order_upwind(double **C_n1, double **C_n2, double dt, double dx, dou
 
         #ifdef isParallel
         FILE *fptr;
-        if (n == 1000)
+        if (n == 400)
         {
             char str_n[20];
             snprintf(str_n, sizeof(str_n), "%d", n);
             char* filename = (char*)malloc(1 + strlen("/first_order/") + strlen(str_n) + strlen(".txt"));
             strcpy(filename, "second_order/");
             strcat(filename, str_n);
-            strcat(filename, ".txt");
+            strcat(filename, "_serial.txt");
             printf("Printing to : %s\n", filename);
             write_to_file(fptr, C_n1, filename, N);
         }
