@@ -1,0 +1,12 @@
+N : 3200
+NT : 400
+L : 1.000000
+T : 1000.000000
+u : 0.0000005000
+v : 0.0000002850
+Algorithm : lax
+Number of threads for outer loops: 32
+Time taken for computing guassian for algo {lax} : 0.024065 
+Printing to : lax/guassian.txt
+Executing Lax Method.
+Time Taken: 6.991619 
