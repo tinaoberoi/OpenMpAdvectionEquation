@@ -53,7 +53,7 @@ The best performance was observed at
 Time taken to execute the code for N = 10,000 varoed a lot on the linux server. But the best time taken was 578 sec.
 According to this time the 
 grid rate = N*N*NT/time
-grid rate = 
+grid rate = 3,527,336,860.670194 cells update per sec.
 
 - A plot of a strong scaling analysis using the following parameters:
 ∗ N = 3200
