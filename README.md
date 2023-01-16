@@ -58,22 +58,24 @@ make MyAdvection
 Used the linux server
 
 CPU(s): 16
-Threads per core: 2
+Threads per core: 2 <br />
 
-- A demonstration that you get the same answer with the parallel and serial versions. Is bitwise
-reproducibility expected?
+A demonstration that you get the same answer with the parallel and serial versions. Is bitwise
+reproducibility expected?<br />
 
-- Your (best) grind rate (timesteps/s) using the parameters from Milestone 1 but on a problem with
-N=10,000. This will be the standard value that we compare with each other in class.
+Your (best) grind rate (timesteps/s) using the parameters from Milestone 1 but on a problem with
+N=10,000. This will be the standard value that we compare with each other in class.<br />
 
-The best performance was observed at 
-- num_of_threads = 8 for outer loop
-- num_of_threads = 8 for inner loop
-- scheduled = static 
-Time taken to execute the code for N = 10,000 varoed a lot on the linux server. But the best time taken was 578 sec.
-According to this time the 
-grid rate = N*N*NT/time
-grid rate = 3,527,336,860.670194 cells update per sec.
+The best performance was observed at <br />
+num_of_threads = 8 for outer loop <br />
+num_of_threads = 8 for inner loop <br />
+scheduled = static <br />
+Time taken to execute the code for N = 10,000 varoed a lot on the linux server. But the best time taken was 578 sec.<br />
+According to this time the <br />
+grid rate = N*N*NT/time <br />
+grid rate = 3,527,336,860.670194 cells update per sec.<br />
+
+## Plots
 
 - A plot of a strong scaling analysis using the following parameters:
 ∗ N = 3200
@@ -127,4 +129,4 @@ N        gridpoints      n
 ![Graph at od weak scaling](./milestone2/images/weak_scale.png)
 
 
-## Plots
+
