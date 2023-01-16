@@ -107,7 +107,7 @@ For schedule = static, N = 3200, algo = first_order
 
 - A plot of a second strong scaling study, using the same parameters as above but with N=200
 For schedule = guided, N = 200, algo = first_order
-![Graph at od weak scaling](./milestone2/images/3200N_first_order_guided.png)
+![Graph at od weak scaling](./milestone2/images/200N_first_order_guided.png)
 
 For schedule = lax, N = 200, algo = lax
 ![Graph at od weak scaling](./milestone2/images/200N_lax_guided.png)
