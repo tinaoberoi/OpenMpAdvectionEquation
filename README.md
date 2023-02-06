@@ -174,11 +174,12 @@ Strong Scaling (Time/7128.5) | 1.09 | 4.01 | 14.67 |
 ![Graph at of strong scaling](./milestone3/strong_scale.png)
 
 - Weak Scaling
-No of RANKS | 1 | 4 | 16 |
+
+No of RANKS | 1 | 4 | 16 
 --- | --- | --- | --- |--- |---
-Log(Ranks) (log ranks base 4) | 0 | 1 | 2 |
-N | 4000 | 8000 | 16000 |
-Weak Scaling (sec) | 1893.471 | 1634.109 | 1757.468 |
+Log(Ranks) (log ranks base 4) | 0 | 1 | 2 
+N | 4000 | 8000 | 16000 
+Weak Scaling (sec) | 1893.471 | 1634.109 | 1757.468 
 
 ![Graph at of strong scaling](./milestone3/weak_scale.png)
 
