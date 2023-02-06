@@ -151,6 +151,12 @@ N        gridpoints      n
 
 ## Milestone 3
 
+To run :
+
+```
+mpicc mpi_lax_nonuniform.c -fopenmp -o test2 -lm
+
+```
 ### Description of parallel startergy
 
 The master node (RANK = 0) broadcasts the params N, NT, u, v, L to all the other ranks. <br/>
@@ -160,13 +166,26 @@ The matrix generation (for loop) for invdividual ranks is parallelised using Ope
 time was coming at `num_threads = 4`.
 
 ### Demonstration of correctness
+- GIF for lax order using MPI <br/>
+<img src="./milestone3/lax.gif" width="500" height="500"/>
 
-### Performance Analysis
+<br/><br/>
+<hr>
+- GIF for first order using MPI <br/>
+<img src="./milestone3/first_order.gif" width="500" height="500"/>
+<br/><br/>
+<hr>
+- GIF for second order using MPI <br/>
+<img src="./milestone3/second_order.gif" width="500" height="500"/>
+<br/><br/>
+<hr>
+
+#### Performance Analysis
 
 - Strong Scaling
 
 No of RANKS | 1 | 4 | 16 |
---- | --- | --- | --- |--- |---
+--- | --- | --- | --- 
 Log(Ranks) (log ranks base 4) | 0 | 1 | 2 |
 Time (sec) | 7128.5 | 1765 | 502.9 |
 Strong Scaling (Time/7128.5) | 1.09 | 4.01 | 14.67 |
@@ -176,13 +195,31 @@ Strong Scaling (Time/7128.5) | 1.09 | 4.01 | 14.67 |
 - Weak Scaling
 
 No of RANKS | 1 | 4 | 16 
---- | --- | --- | --- |--- |---
-Log(Ranks) (log ranks base 4) | 0 | 1 | 2 
-N | 4000 | 8000 | 16000 
-Weak Scaling (sec) | 1893.471 | 1634.109 | 1757.468 
+--- | --- | --- | --- 
+Log (log ranks base 4) | 0 | 1 | 2 |
+N | 4000 | 8000 | 16000 | 
+Weak Scaling (sec) | 1893.471 | 1634.109 | 1757.468 |
+
 
 ![Graph at of strong scaling](./milestone3/weak_scale.png)
 
 No of RANKS | 1 | 4 | 16 |
---- | --- | --- | --- |--- |---
+--- | --- | --- | --- 
 Grind Rate in Billions | 0.3 | 1.1 | 4.0 |
+
+
+### Support of non uniform velocity
+
+Here I tried different u and v relationships but only one made sense. But most of them were either moving very slow or movinf very fast.
+The two relationships that worked here were:
+- Moving very slow
+The function I used here is `u = u + u/i` and `v = v+ v/j`
+
+![Graph at of strong scaling](./milestone3/output_non_uniform.gif)
+
+- The function I used here is `u = u + i*10e-10` and `v = v + j*10e-10`
+
+![Graph at of strong scaling](./milestone3/output_non_uniform2.gif)
+
+
+ACK : NISHCHAY KARLE 
