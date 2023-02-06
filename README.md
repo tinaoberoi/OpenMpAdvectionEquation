@@ -149,4 +149,39 @@ N        gridpoints      n
 ![Graph at od weak scaling](./milestone2/images/weak_scale.png)
 
 
+## Milestone 3
 
+### Description of parallel startergy
+
+The master node (RANK = 0) broadcasts the params N, NT, u, v, L to all the other ranks. <br/>
+Each rank executes its own chunk, and in the end sends its to master to create the final array.
+
+The matrix generation (for loop) for invdividual ranks is parallelised using OpenMp. For this the optimum
+time was coming at `num_threads = 4`.
+
+### Demonstration of correctness
+
+### Performance Analysis
+
+- Strong Scaling
+
+No of RANKS | 1 | 4 | 16 |
+--- | --- | --- | --- |--- |---
+Log(Ranks) (log ranks base 4) | 0 | 1 | 2 |
+Time (sec) | 7128.5 | 1765 | 502.9 |
+Strong Scaling (Time/7128.5) | 1.09 | 4.01 | 14.67 |
+
+![Graph at of strong scaling](./milestone3/strong_scale.png)
+
+- Weak Scaling
+No of RANKS | 1 | 4 | 16 |
+--- | --- | --- | --- |--- |---
+Log(Ranks) (log ranks base 4) | 0 | 1 | 2 |
+N | 4000 | 8000 | 16000 |
+Weak Scaling (sec) | 1893.471 | 1634.109 | 1757.468 |
+
+![Graph at of strong scaling](./milestone3/weak_scale.png)
+
+No of RANKS | 1 | 4 | 16 |
+--- | --- | --- | --- |--- |---
+Grind Rate in Billions | 0.3 | 1.1 | 4.0 |
